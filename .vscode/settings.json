@@ -1,0 +1,66 @@
+{
+    "better-comments.tags": [
+
+
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#5F85DB",
+        "editorBracketHighlight.foreground2": "#1e00ff",
+        "editorBracketHighlight.foreground3": "#02dc02",
+        "editorBracketHighlight.foreground4": "#FF5200",
+        "editorBracketHighlight.foreground5": "#e5ff00",
+        "editorBracketHighlight.foreground6": "#bb00ff",
+        "editorBracketHighlight.foreground7": "#750E21",
+        "editorBracketHighlight.foreground8": "#B99470",
+        "editorBracketHighlight.foreground9": "#40F8FF",
+        "editorBracketHighlight.foreground10": "#BEADFA",
+    },
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "liveServer.settings.fullReload": true,
+    
+}

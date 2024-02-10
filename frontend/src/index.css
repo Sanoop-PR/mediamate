@@ -1,0 +1,153 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Aladin&family=Audiowide&family=Bungee+Shade&family=Calligraffitti&family=Cookie&family=Courgette&family=Dhurjati&family=EB+Garamond&family=Faster+One&family=Fontdiner+Swanky&family=Fredericka+the+Great&family=IM+Fell+English+SC&family=Inter&family=Irish+Grover&family=Josefin+Sans&family=Kenia&family=Kumbh+Sans&family=Lexend+Zetta&family=Libre+Bodoni&family=Limelight&family=Lobster+Two:ital@0;1&family=Marck+Script&family=Montserrat&family=Montserrat+Subrayada&family=Noto+Sans+Malayalam&family=Nova+Square&family=Odibee+Sans&family=Philosopher&family=Playfair+Display:ital@0;1&family=Raleway&family=Rochester&family=Sansita+Swashed&family=Shadows+Into+Light&family=Silkscreen&family=Space+Mono&family=Tangerine&family=Turret+Road&family=Ubuntu&family=UnifrakturMaguntia&family=Wallpoet&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  .textShadow{
+    text-shadow: 0px 0px 10px #282828;
+  }
+
+    /* home.jsx */
+  .home-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* grid-auto-flow: row; */
+    grid-template-areas: " home-post home-right";
+  }
+
+  .home-left {
+    grid-area: home-left;
+  }
+
+  .home-post {
+    grid-area: home-post;
+  }
+
+  .home-right {
+    grid-area: home-right;
+  }
+  @media screen and (max-width: 768px) {
+    .home-layout {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "home-post"
+        "home-right"
+    }
+  }
+
+  /* birthdaycard.jsx */
+  .birthday_card{
+    background-image: url('./assets/birthday_pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  /* scrollbar-hide */
+  .scrollbar_hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* chatbox flex layout */
+
+  .chat_section {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "chat_nav_bar chat_nav_bar chat_nav_bar chat_nav_bar"
+      "chat_aside message_section message_section message_section"
+      "chat_aside message_section message_section message_section"
+      "chat_aside message_section message_section message_section"
+      "chat_aside message_section message_section message_section"
+      "chat_aside chat_input chat_input chat_input";
+  }
+
+
+  
+  .chat_nav_bar { grid-area: chat_nav_bar; }
+  
+  .chat_aside { grid-area: chat_aside; }
+  
+  .chat_input { grid-area: chat_input; }
+  
+  .message_section { grid-area: message_section; }
+  
+  @media screen and (max-width: 640px) {
+    .chat_section {  display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "chat_nav_bar"
+        "message_section"
+        "message_section"
+        "message_section"
+        "message_section"
+        "chat_input";
+    }
+  }
+ 
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* font-family: 'Advent Pro', sans-serif; */
+  /* font-family: 'Aladin' */
+  /* font-family: 'Audiowide', sans-serif; */
+  /* font-family: 'Bungee Shade', sans-serif; */
+  /* font-family: 'Calligraffitti', cursive; */
+  /* font-family: 'Cookie', cursive; */
+  /* font-family: 'Courgette', cursive;     */
+  /* font-family: 'Dhurjati', sans-serif; */
+  /* font-family: 'EB Garamond', serif; */
+  /* font-family: 'Faster One', sans-serif; */
+  /* font-family: 'Fontdiner Swanky', serif; */
+  /* font-family: 'Fredericka the Great', serif; */
+  /* font-family: 'IM Fell English SC', serif; */
+  /* font-family: 'Inter', sans-serif; */
+  /* font-family: 'Irish Grover', sans-serif; */
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-family: 'Kenia', sans-serif; */
+  /* font-family: 'Kumbh Sans', sans-serif; */
+  /* font-family: 'Lexend Zetta', sans-serif; */
+  /* font-family: 'Libre Bodoni', serif; */
+  /* font-family: 'Limelight', sans-serif; */
+  /* font-family: 'Lobster Two', sans-serif; */
+  /* font-family: 'Lobster Two', sans-serif; */
+  /* font-family: 'Marck Script', cursive; */
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: 'Montserrat Subrayada', sans-serif; */
+  /* font-family: 'Noto Sans Malayalam', sans-serif; */
+  /* font-family: 'Nova Square', sans-serif; */
+  /* font-family: 'Odibee Sans', sans-serif; */
+  /* font-family: 'Philosopher', sans-serif; */
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Rochester', cursive; */
+  /* font-family: 'Sansita Swashed'; */
+  /* font-family: 'Shadows Into Light'; */
+  /* font-family: 'Silkscreen', sans-serif; */
+  /* font-family: 'Space Mono', monospace; */
+  /* font-family: 'Tangerine', cursive; */
+  /* font-family: 'Turret Road', sans-serif; */
+  /* font-family: 'Ubuntu', sans-serif; */
+  /* font-family: 'UnifrakturMaguntia', cursive; */
+  /* font-family: 'Wallpoet', sans-serif; */
+
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+/* https://fonts.google.com/share?selection.family=Advent+Pro|Aladin|Audiowide|Bungee+Shade|Calligraffitti|Cookie|Courgette|Dhurjati|EB+Garamond|Faster+One|Fontdiner+Swanky|Fredericka+the+Great|IM+Fell+English+SC|Inter|Irish+Grover|Josefin+Sans|Kenia|Kumbh+Sans|Lexend+Zetta|Libre+Bodoni|Limelight|Lobster+Two:ital@0;1|Marck+Script|Montserrat|Montserrat+Subrayada|Noto+Sans+Malayalam|Nova+Square|Odibee+Sans|Philosopher|Playfair+Display:ital@0;1|Raleway|Rochester|Sansita+Swashed|Shadows+Into+Light|Silkscreen|Space+Mono|Tangerine|Turret+Road|Ubuntu|UnifrakturMaguntia|Wallpoet */
+
+
+/* '#7c4dff', '#0091ea', '#ff9100', '#ff1744' */
