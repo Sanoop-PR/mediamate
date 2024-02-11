@@ -63,8 +63,7 @@ $ npm run dev
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![Screenshot_11-2-2024_102023_mediamate netlify app](https://github.com/Sanoop-PR/mediamate/assets/80612964/6ea45d40-1baf-4469-8378-c92db1d0ac02)
 
 ## Demo
 
